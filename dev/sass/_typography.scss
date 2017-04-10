@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Jacques+Francois+Shadow|Josefin+Sans|Julius+Sans+One|Special+Elite|Vast+Shadow');
+
+body {
+	font-family: "Cutive Mono", monospace;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.6;
+	width: 320px;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	
+@include large-mobile {
+		width: 480px;
+		font-size: 1.15em;
+	}
+	
+	@include tablet {
+		width: 768px;
+		font-size: 1.25em;
+	}
+	
+	@include laptop {
+		width: 1024px;
+		font-size: 1.25em;		
+	}
+	
+	@include desktop {
+		width: 1366px;
+		font-size: 1.5em;
+	}
+	
+	@include fullscreen {
+		width: 1680px;
+		font-size: 1.618em;
+}
+
+}
+
+.header h1, .header h2, .header h3, {
+	@include film-noir;
+	color: #fff;
+}
+
+.header-2 h1, .header-2 h2 {
+	@include film-noir;
+	color: #000;
+}
+
+.header h1, .header-2 h1 {
+	
+	@include header;
+	
+	@include large-mobile {
+		font-size: 2em;
+	}
+	
+	@include tablet {
+		font-size: 2.618em;
+	}
+	
+	@include laptop {
+		font-size: 4.236em;
+	}
+	
+	@include desktop {
+		font-size: 4.236em;
+	}
+	
+	@include fullscreen {
+		font-size: 6.857em;
+	} 
+}
+	
+.header h2, .header-2 h2 {
+	font-size: 0.618em;
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 0.236em;
+
+	@include large-mobile {
+		font-size: 1em;
+	}
+	
+	@include tablet {
+		font-size: 1.618em;
+	}
+	
+	@include laptop {
+		font-size: 1.75em;
+	}
+	
+	@include fullscreen {
+		font-size: 2.618em;
+	}
+
+}
+
+.noir-heading-1 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	
+		@include large-mobile {
+			top: 4%;
+			left: 15%;
+		} 
+}
+
+.noir-heading-2 {
+	position: absolute;
+	top: 10%;
+	right: 20%;
+	
+		@include large-mobile {
+			top: 9%;
+			right: 30%;
+		}
+	
+		@include tablet {
+			top: 10%;
+			left: 30%;
+		}
+	
+		@include laptop {
+			top: 10%;
+			left: 30%;
+		}
+	
+		@include desktop {
+			top: 10%;
+			left: 40%;
+		}
+	
+		@include fullscreen {
+			top: 10%;
+			left: 50%;
+		}
+}
+
+.noir-heading-3 {
+	position: absolute;
+	right: 15%;
+	top: 33%;
+	
+		@include large-mobile {
+			right: 15%;
+			top: 40%;
+		}
+	
+		@include tablet {
+			right: 12%;
+			top: 40%;
+		}
+	
+		@include laptop {
+			right: 20%;
+			top: 37%;
+		}
+	
+		@include desktop {
+			right: 25%;
+			top: 33%;
+		}
+	
+		@include fullscreen {
+			right: 20%;
+			top: 32%;
+		}
+}
+
+.noir-heading-4 {
+	position: absolute;
+	right: 3%;
+	top: 37%;
+	
+		@include large-mobile {
+			right: 3%;
+			top: 47%;
+		}
+	
+		@include tablet {
+			right: 1%;
+			top: 47%;
+		}
+		
+		@include laptop {
+			right: 5%;
+			top: 40%;
+		}
+		
+		@include desktop {
+			right: 7%;
+			top: 35%;
+		}
+		
+		@include fullscreen {
+			right: 3%;
+			top: 37%;
+		}
+}
