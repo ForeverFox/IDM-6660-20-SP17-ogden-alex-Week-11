@@ -10,7 +10,7 @@ body {
 	margin: 0 auto;
 	position: relative;
 	
-@include large-mobile {
+	@include large-mobile {
 		width: 480px;
 		font-size: 1.15em;
 	}
@@ -47,7 +47,7 @@ body {
 	color: #000;
 }
 
-.header h1, .header-2 h1 {
+.header h1 {
 	
 	@include header;
 	
@@ -94,6 +94,13 @@ body {
 		font-size: 2.618em;
 	}
 
+}
+
+.header-2 h1 {
+	font-style: italic;
+	letter-spacing: 0.5rem;
+	line-height: 1.2;
+	text-transform: uppercase;
 }
 
 .noir-heading-1 {
@@ -198,4 +205,13 @@ body {
 			right: 3%;
 			top: 37%;
 		}
+}
+
+.section h2 {
+	font-family: "Cutive Mono", monospace;
+	font-size: 1.15em;
+}
+
+.section h3 {
+	font-size: 1em;
 }

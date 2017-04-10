@@ -2,6 +2,9 @@
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
+}
+
+.header {
 	width: 320px;
 	height: 568px;
 	
@@ -33,7 +36,8 @@
 
 .header-2 {
 	color: #000;
-	padding-left: 1em;
+	width: 100%;
+	padding: 1em 1em 0 1em;
 }
 
 .logo {
