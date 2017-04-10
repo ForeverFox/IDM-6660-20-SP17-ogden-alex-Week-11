@@ -79,7 +79,7 @@ body {
 	letter-spacing: 0.236em;
 
 	@include large-mobile {
-		font-size: 1em;
+		font-size: 0.618em;
 	}
 	
 	@include tablet {
@@ -91,7 +91,7 @@ body {
 	}
 	
 	@include fullscreen {
-		font-size: 2.618em;
+		font-size: 2em;
 	}
 
 }
@@ -164,6 +164,19 @@ body {
 			top: 4%;
 			left: 15%;
 		} 
+		
+		@include tablet {
+			left: 22%;
+		}
+		
+		@include laptop {
+			left: 20%;
+		}
+		
+		@include fullscreen {
+			top: 5%;
+			left: 37%;
+		}
 }
 
 .noir-heading-2 {
@@ -178,12 +191,12 @@ body {
 	
 		@include tablet {
 			top: 10%;
-			left: 30%;
+			left: 40%;
 		}
 	
 		@include laptop {
 			top: 10%;
-			left: 30%;
+			left: 45%;
 		}
 	
 		@include desktop {
@@ -192,8 +205,8 @@ body {
 		}
 	
 		@include fullscreen {
-			top: 10%;
-			left: 50%;
+			top: 15%;
+			left: 57%;
 		}
 }
 
@@ -203,12 +216,12 @@ body {
 	top: 55%;
 	
 		@include large-mobile {
-			right: 15%;
+			right: 25%;
 			top: 40%;
 		}
 	
 		@include tablet {
-			right: 12%;
+			right: 18%;
 			top: 40%;
 		}
 	
@@ -234,13 +247,13 @@ body {
 	top: 60%;
 	
 		@include large-mobile {
-			right: 3%;
-			top: 47%;
+			right: 15%;
+			top: 45%;
 		}
 	
 		@include tablet {
 			right: 1%;
-			top: 47%;
+			top: 45%;
 		}
 		
 		@include laptop {
@@ -255,7 +268,7 @@ body {
 		
 		@include fullscreen {
 			right: 3%;
-			top: 37%;
+			top: 35%;
 		}
 }
 
