@@ -5,35 +5,35 @@ body {
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 1.6;
-	width: 320px;
-	height: 100vh;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0;
 	position: relative;
 	
 	@include large-mobile {
-		width: 480px;
+
 		font-size: 1.15em;
 	}
 	
 	@include tablet {
-		width: 768px;
+
 		font-size: 1.25em;
 	}
 	
 	@include laptop {
-		width: 1024px;
+
 		font-size: 1.25em;		
 	}
 	
 	@include desktop {
-		width: 1366px;
+
 		font-size: 1.5em;
 	}
 	
 	@include fullscreen {
-		width: 1680px;
+
 		font-size: 1.618em;
-}
+	}
 
 }
 
@@ -101,11 +101,63 @@ body {
 	letter-spacing: 0.5rem;
 	line-height: 1.2;
 	text-transform: uppercase;
+	
+	@include tablet {
+		font-size: 2.618em;
+	}
+	
+	@include laptop {
+		font-size: 4.236em;
+	}
+	
+	@include fullscreen {
+		font-size: 5.5em;
+	}
+	
+}
+
+.h1-positioning {
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	
+	@include large-mobile {
+		top: 30%;
+		left: 30%;
+	}
+	
+	@include tablet {
+		top: 25%;
+	}
+	
+	@include fullscreen {
+		top: 20%;
+	}
+	
+}
+
+.h1-sub-positioning {
+	position: absolute;
+	top: 75%;
+	left: 45%;
+	
+	@include large-mobile {
+		top: 66%;
+		left: 40%;
+	}
+	
+	@include tablet {
+		top: 50%;
+	}
+	
+	@include laptop {
+		top: 55%;
+	}
 }
 
 .noir-heading-1 {
 	position: absolute;
-	top: 5%;
+	top: 10%;
 	left: 10%;
 	
 		@include large-mobile {
@@ -116,7 +168,7 @@ body {
 
 .noir-heading-2 {
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	right: 20%;
 	
 		@include large-mobile {
@@ -148,7 +200,7 @@ body {
 .noir-heading-3 {
 	position: absolute;
 	right: 15%;
-	top: 33%;
+	top: 55%;
 	
 		@include large-mobile {
 			right: 15%;
@@ -166,7 +218,7 @@ body {
 		}
 	
 		@include desktop {
-			right: 25%;
+			right: 35%;
 			top: 33%;
 		}
 	
@@ -179,7 +231,7 @@ body {
 .noir-heading-4 {
 	position: absolute;
 	right: 3%;
-	top: 37%;
+	top: 60%;
 	
 		@include large-mobile {
 			right: 3%;
@@ -197,8 +249,8 @@ body {
 		}
 		
 		@include desktop {
-			right: 7%;
-			top: 35%;
+			right: 22%;
+			top: 37%;
 		}
 		
 		@include fullscreen {

@@ -5,14 +5,13 @@
 	top: 0;
 	right: 0;
 	width: 80px;
-	height: 220px;
+	height: 200px;
 	z-index: 150;
 	background-color: $red;
-	padding: 0.618em;
-	margin: 0;
 
 	@include large-mobile {
-			
+			width: 100px;
+			height: 240px;
 		}
 		
 	@include tablet {
@@ -33,12 +32,12 @@
 }
 
 .menu {
-	padding: 1.618em 0.618em;
+	padding: 0;
 	font-size: 0.75em;
 	list-style-type: none;
 }
 
 
 .main-nav li{
-	padding: 0.618em 0; 
+	padding: 1em 0.618em; 
 }

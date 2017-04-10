@@ -6,7 +6,7 @@
 
 .header {
 	width: 320px;
-	height: 568px;
+	height: 400px;
 	
 	@include large-mobile {
 			width: 480px;
@@ -37,16 +37,33 @@
 .header-2 {
 	color: #000;
 	width: 100%;
+	height: 100px;
 	padding: 1em 1em 0 1em;
+	
+	@include tablet {
+		height: 200px;
+	}
+	
+	@include laptop {
+		height: 260px;
+	}
+	
+	@include desktop {
+		height: 300px;
+	}
+	
+	@include fullscreen {
+		height: 400px;
+	}
 }
 
 .logo {
 	margin: 0;
 	padding: 0;
-	width: 160px;
+	width: 180px;
 	position: absolute; 
-	top: 20%;
-	left: 10%;
+	top: 30%;
+	left: 7%;
 
 	
 	@include large-mobile {
@@ -56,11 +73,13 @@
 		
 	@include tablet {
 		width: 384px;
+		left: 5%;
 		}
 		
 	@include laptop {
 		width: 420px;
-		top: 25%;
+		top: 22%;
+		left: 3%;
 		}
 	
 	@include desktop {
@@ -69,7 +88,7 @@
 		
 	@include fullscreen {
 		width: 640px;
-		top: 20%;
+		top: 10%;
 		} 
 }
 

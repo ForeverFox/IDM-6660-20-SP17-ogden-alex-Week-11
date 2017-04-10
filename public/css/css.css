@@ -16,6 +16,12 @@ a:link, a:visited {
   text-decoration: none;
   color: #fff; }
 
+.main {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh; }
+
 .section {
   background-color: #fff;
   padding: 0 1em 1em 1em; }
@@ -27,16 +33,64 @@ a:link, a:visited {
   font-size: 0.75em;
   padding: 1em 0 1em 1.618em; }
 
-.container {
+.container, .content {
   width: 300px;
-  height: 512px;
-  padding: 1em 0; }
+  height: auto;
+  padding: 1.618em 0.382em;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .container, .content {
+      width: 360px;
+      float: left; } }
+  @media screen and (min-width: 1024px) {
+    .container, .content {
+      width: 480px;
+      padding-top: 3em; } }
+  @media screen and (min-width: 1366px) {
+    .container, .content {
+      width: 640px;
+      padding-top: 4em; } }
+  @media screen and (min-width: 1680px) {
+    .container, .content {
+      width: 768px;
+      padding-top: 6em; } }
 
-.container img {
+.container img, .content img {
   max-width: 100%; }
 
-.container:after {
-  clear: both; }
+.page-id {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  -ms-transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg); }
+
+.small-logo {
+  width: 100px;
+  position: absolute;
+  top: 2.3em;
+  left: 0.618em; }
+  @media screen and (min-width: 410px) {
+    .small-logo {
+      top: 2.618em;
+      left: 0.33em; } }
+  @media screen and (min-width: 768px) {
+    .small-logo {
+      width: 150px;
+      left: 1.618em; } }
+  @media screen and (min-width: 1024px) {
+    .small-logo {
+      width: 200px; } }
+  @media screen and (min-width: 1680px) {
+    .small-logo {
+      left: 2.618em; } }
+
+.small-logo img {
+  max-width: 100%; }
 
 .footer {
   width: 100%;
@@ -56,8 +110,8 @@ a:link, a:visited {
 
 .header {
   width: 320px;
-  height: 568px; }
-  @media screen and (min-width: 480px) {
+  height: 400px; }
+  @media screen and (min-width: 410px) {
     .header {
       width: 480px;
       height: 480px; } }
@@ -81,33 +135,48 @@ a:link, a:visited {
 .header-2 {
   color: #000;
   width: 100%;
+  height: 100px;
   padding: 1em 1em 0 1em; }
+  @media screen and (min-width: 768px) {
+    .header-2 {
+      height: 200px; } }
+  @media screen and (min-width: 1024px) {
+    .header-2 {
+      height: 260px; } }
+  @media screen and (min-width: 1366px) {
+    .header-2 {
+      height: 300px; } }
+  @media screen and (min-width: 1680px) {
+    .header-2 {
+      height: 400px; } }
 
 .logo {
   margin: 0;
   padding: 0;
-  width: 160px;
+  width: 180px;
   position: absolute;
-  top: 20%;
-  left: 10%; }
-  @media screen and (min-width: 480px) {
+  top: 30%;
+  left: 7%; }
+  @media screen and (min-width: 410px) {
     .logo {
       width: 240px;
       top: 25%; } }
   @media screen and (min-width: 768px) {
     .logo {
-      width: 384px; } }
+      width: 384px;
+      left: 5%; } }
   @media screen and (min-width: 1024px) {
     .logo {
       width: 420px;
-      top: 25%; } }
+      top: 22%;
+      left: 3%; } }
   @media screen and (min-width: 1366px) {
     .logo {
       top: 20%; } }
   @media screen and (min-width: 1680px) {
     .logo {
       width: 640px;
-      top: 20%; } }
+      top: 10%; } }
 
 .logo img {
   max-width: 100%; }
@@ -117,29 +186,24 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.6;
-  width: 320px;
-  height: 100vh;
+  width: 100%;
   margin: 0 auto;
+  padding: 0;
   position: relative; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 410px) {
     body {
-      width: 480px;
       font-size: 1.15em; } }
   @media screen and (min-width: 768px) {
     body {
-      width: 768px;
       font-size: 1.25em; } }
   @media screen and (min-width: 1024px) {
     body {
-      width: 1024px;
       font-size: 1.25em; } }
   @media screen and (min-width: 1366px) {
     body {
-      width: 1366px;
       font-size: 1.5em; } }
   @media screen and (min-width: 1680px) {
     body {
-      width: 1680px;
       font-size: 1.618em; } }
 
 .header h1, .header h2, .header h3 {
@@ -163,7 +227,7 @@ body {
   letter-spacing: 0.618rem;
   line-height: 1.2;
   text-transform: uppercase; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 410px) {
     .header h1 {
       font-size: 2em; } }
   @media screen and (min-width: 768px) {
@@ -184,7 +248,7 @@ body {
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.236em; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 410px) {
     .header h2, .header-2 h2 {
       font-size: 1em; } }
   @media screen and (min-width: 768px) {
@@ -202,21 +266,60 @@ body {
   letter-spacing: 0.5rem;
   line-height: 1.2;
   text-transform: uppercase; }
+  @media screen and (min-width: 768px) {
+    .header-2 h1 {
+      font-size: 2.618em; } }
+  @media screen and (min-width: 1024px) {
+    .header-2 h1 {
+      font-size: 4.236em; } }
+  @media screen and (min-width: 1680px) {
+    .header-2 h1 {
+      font-size: 5.5em; } }
+
+.h1-positioning {
+  position: absolute;
+  top: 40%;
+  left: 35%; }
+  @media screen and (min-width: 410px) {
+    .h1-positioning {
+      top: 30%;
+      left: 30%; } }
+  @media screen and (min-width: 768px) {
+    .h1-positioning {
+      top: 25%; } }
+  @media screen and (min-width: 1680px) {
+    .h1-positioning {
+      top: 20%; } }
+
+.h1-sub-positioning {
+  position: absolute;
+  top: 75%;
+  left: 45%; }
+  @media screen and (min-width: 410px) {
+    .h1-sub-positioning {
+      top: 66%;
+      left: 40%; } }
+  @media screen and (min-width: 768px) {
+    .h1-sub-positioning {
+      top: 50%; } }
+  @media screen and (min-width: 1024px) {
+    .h1-sub-positioning {
+      top: 55%; } }
 
 .noir-heading-1 {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 10%; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 410px) {
     .noir-heading-1 {
       top: 4%;
       left: 15%; } }
 
 .noir-heading-2 {
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 20%; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 410px) {
     .noir-heading-2 {
       top: 9%;
       right: 30%; } }
@@ -240,8 +343,8 @@ body {
 .noir-heading-3 {
   position: absolute;
   right: 15%;
-  top: 33%; }
-  @media screen and (min-width: 480px) {
+  top: 55%; }
+  @media screen and (min-width: 410px) {
     .noir-heading-3 {
       right: 15%;
       top: 40%; } }
@@ -255,7 +358,7 @@ body {
       top: 37%; } }
   @media screen and (min-width: 1366px) {
     .noir-heading-3 {
-      right: 25%;
+      right: 35%;
       top: 33%; } }
   @media screen and (min-width: 1680px) {
     .noir-heading-3 {
@@ -265,8 +368,8 @@ body {
 .noir-heading-4 {
   position: absolute;
   right: 3%;
-  top: 37%; }
-  @media screen and (min-width: 480px) {
+  top: 60%; }
+  @media screen and (min-width: 410px) {
     .noir-heading-4 {
       right: 3%;
       top: 47%; } }
@@ -280,8 +383,8 @@ body {
       top: 40%; } }
   @media screen and (min-width: 1366px) {
     .noir-heading-4 {
-      right: 7%;
-      top: 35%; } }
+      right: 22%;
+      top: 37%; } }
   @media screen and (min-width: 1680px) {
     .noir-heading-4 {
       right: 3%;
@@ -300,23 +403,31 @@ body {
   top: 0;
   right: 0;
   width: 80px;
-  height: 220px;
+  height: 200px;
   z-index: 150;
-  background-color: #cd0929;
-  padding: 0.618em;
-  margin: 0; }
+  background-color: #cd0929; }
+  @media screen and (min-width: 410px) {
+    .main-nav {
+      width: 100px;
+      height: 240px; } }
 
 .menu {
-  padding: 1.618em 0.618em;
+  padding: 0;
   font-size: 0.75em;
   list-style-type: none; }
 
 .main-nav li {
-  padding: 0.618em 0; }
+  padding: 1em 0.618em; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+/* CLEARFIX */
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /*# sourceMappingURL=css.css.map */
