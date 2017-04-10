@@ -28,6 +28,13 @@ a:link, a:visited {
 	padding: 1em 0 1em 1.618em;
 }
 
+.skills {
+	font-size: 1em;
+	list-style-type: none;
+	font-style: italic;
+}
+
+
 .container, .content {
 	width: 300px;
 	height: auto;
@@ -45,15 +52,32 @@ a:link, a:visited {
 	}
 	
 	@include desktop {
-		width: 640px;
+		width: 768px;
 		padding-top: 4em;
 	}
 	
 	@include fullscreen {
-		width: 768px;
-		padding-top: 6em;
+		width: 800px;
+		padding-left: 2em;
 	}
 	
+}
+
+.content {
+
+	@include laptop {
+		padding-left: 4em;
+		width: 500px;
+	}
+	
+	@include desktop {
+		width: 640px;
+	}
+	
+	@include fullscreen {
+		padding-left: 2em;
+		width: 768px;
+	}
 }
 
 .container img, .content img {
@@ -101,7 +125,6 @@ a:link, a:visited {
 
 .footer {
 	width: 100%;
-	height: 80px;
 	background-color: $red;
 }
 

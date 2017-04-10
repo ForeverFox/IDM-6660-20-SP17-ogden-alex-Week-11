@@ -47,3 +47,6 @@ Temporary Items
 .apdisk
 *.scssc
 *.scssc
+*.scssc
+.sass-cache/7869759441dc712977ea288afb244db236676c5c/_header.scssc
+*.scssc
