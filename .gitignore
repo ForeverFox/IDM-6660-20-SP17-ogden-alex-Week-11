@@ -47,9 +47,15 @@ Temporary Items
 .apdisk
 *.scssc
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/remotes/origin/development
 *.scssc
 *.scssc
 .sass-cache/7869759441dc712977ea288afb244db236676c5c/_header.scssc
 *.scssc
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/development
+=======
 >>>>>>> refs/remotes/origin/development

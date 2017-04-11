@@ -11,7 +11,10 @@
 	@include large-mobile {
 			width: 480px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			height: 600px;
+=======
+>>>>>>> refs/remotes/origin/development
 =======
 >>>>>>> refs/remotes/origin/development
 		}
@@ -19,7 +22,11 @@
 	@include tablet {
 			width: 768px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			height: 100vh;
+=======
+			height: 512px;
+>>>>>>> refs/remotes/origin/development
 =======
 			height: 512px;
 >>>>>>> refs/remotes/origin/development
@@ -28,6 +35,10 @@
 	@include laptop {
 			width: 1024px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			height: 600px;
+>>>>>>> refs/remotes/origin/development
 =======
 			height: 600px;
 >>>>>>> refs/remotes/origin/development
@@ -36,6 +47,10 @@
 	@include desktop {
 			width: 1366px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			height: 768px;
+>>>>>>> refs/remotes/origin/development
 =======
 			height: 768px;
 >>>>>>> refs/remotes/origin/development

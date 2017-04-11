@@ -21,7 +21,12 @@ a:link, a:visited {
   margin: 0 auto;
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 100vh; }
+=======
+  height: 100vh;
+  background-color: #000; }
+>>>>>>> refs/remotes/origin/development
 =======
   height: 100vh;
   background-color: #000; }
@@ -70,6 +75,7 @@ a:link, a:visited {
     padding-left: 4em;
     width: 500px; } }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (min-width: 1366px) {
   .content {
     width: 620px; } }
@@ -77,6 +83,11 @@ a:link, a:visited {
   .content {
     padding-left: 2em;
     width: 768px; } }
+=======
+@media screen and (min-width: 1680px) {
+  .content {
+    padding-left: 2em; } }
+>>>>>>> refs/remotes/origin/development
 =======
 @media screen and (min-width: 1680px) {
   .content {
@@ -146,6 +157,7 @@ a:link, a:visited {
   @media screen and (min-width: 410px) {
     .header {
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 480px;
       height: 600px; } }
   @media screen and (min-width: 768px) {
@@ -159,6 +171,8 @@ a:link, a:visited {
     .header {
       width: 1366px; } }
 =======
+=======
+>>>>>>> refs/remotes/origin/development
       width: 480px; } }
   @media screen and (min-width: 768px) {
     .header {
@@ -172,6 +186,9 @@ a:link, a:visited {
     .header {
       width: 1366px;
       height: 768px; } }
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/development
+=======
 >>>>>>> refs/remotes/origin/development
   @media screen and (min-width: 1680px) {
     .header {
@@ -471,6 +488,7 @@ h4 {
 
 /* NAVIGATION MENU */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .main-nav {
   position: absolute;
   top: 0;
@@ -493,6 +511,8 @@ h4 {
   padding: 1em 0.618em; }
 
 =======
+=======
+>>>>>>> refs/remotes/origin/development
 .main-nav, .main-nav-home {
   width: 100%;
   text-align: center; }
@@ -561,6 +581,9 @@ h4 {
 
   .main-nav-home li a:hover {
     color: #cd0929; } }
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/development
+=======
 >>>>>>> refs/remotes/origin/development
 * {
   margin: 0;

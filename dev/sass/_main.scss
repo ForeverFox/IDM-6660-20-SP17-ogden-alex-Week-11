@@ -13,6 +13,10 @@ a:link, a:visited {
 	width: 100%;
 	height: 100vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	background-color: #000;
+>>>>>>> refs/remotes/origin/development
 =======
 	background-color: #000;
 >>>>>>> refs/remotes/origin/development
@@ -75,6 +79,7 @@ a:link, a:visited {
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@include desktop {
 		width: 620px;
 	}
@@ -82,6 +87,10 @@ a:link, a:visited {
 	@include fullscreen {
 		padding-left: 2em;
 		width: 768px;
+=======
+	@include fullscreen {
+		padding-left: 2em;
+>>>>>>> refs/remotes/origin/development
 =======
 	@include fullscreen {
 		padding-left: 2em;
