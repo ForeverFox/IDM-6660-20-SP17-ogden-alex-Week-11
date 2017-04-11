@@ -1,0 +1,36 @@
+/* MEDIA QUERIES */
+$large-mobile-width: "screen and (min-width: 410px)";
+$tablet-width: "screen and (min-width: 768px)";
+$laptop-width: "screen and (min-width: 1024px)";
+$desktop-width: "screen and (min-width: 1366px)";
+$fullscreen-width: "screen and (min-width: 1680px)";
+
+
+/* COLORS */
+$red: #cd0929;
+
+/* TYPOGRAPHY */
+@mixin film-noir {
+	font-family: "Josefin Sans", sans-serif;
+	-ms-transform: rotate(-8deg); 
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+@mixin header {
+	font-size: 1.618em;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 0.618rem;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+
+/* CONTAINERS */
+.centered-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

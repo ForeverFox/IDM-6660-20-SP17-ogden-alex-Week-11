@@ -1,0 +1,100 @@
+.header, .header-2 {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.header {
+	width: 320px;
+	height: 400px;
+	
+	@include large-mobile {
+			width: 480px;
+			height: 600px;
+		}
+	
+	@include tablet {
+			width: 768px;
+			height: 100vh;
+		}
+		
+	@include laptop {
+			width: 1024px;
+		}
+	
+	@include desktop {
+			width: 1366px;
+		}
+		
+	@include fullscreen {
+			width: 1680px;
+		}	
+}
+
+.header-2 {
+	background-color: #000;
+	width: 100%;
+	height: 150px;
+	padding: 1em 1em 0 1em;
+	
+	@include large-mobile {
+		height: 180px;
+	}
+	
+	@include tablet {
+		height: 220px;
+	}
+	
+	@include laptop {
+		height: 300px;
+	}
+	
+	@include desktop {
+		height: 320px;
+	}
+	
+	@include fullscreen {
+		height: 360px;
+	}
+}
+
+.logo {
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	position: absolute; 
+	top: 30%;
+	left: 7%;
+
+	
+	@include large-mobile {
+		width: 240px;
+		top: 25%;
+		}
+		
+	@include tablet {
+		width: 384px;
+		left: 5%;
+		}
+		
+	@include laptop {
+		width: 420px;
+		top: 22%;
+		left: 3%;
+		}
+	
+	@include desktop {
+		top: 30%;
+	}
+		
+	@include fullscreen {
+		width: 640px;
+		top: 19%;
+		left: 2%;
+		} 
+}
+
+.logo img {
+	max-width: 100%;
+}
+

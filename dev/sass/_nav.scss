@@ -1,0 +1,43 @@
+/* NAVIGATION MENU */
+
+.main-nav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80px;
+	height: 200px;
+	z-index: 150;
+	background-color: $red;
+
+	@include large-mobile {
+			width: 100px;
+			height: 240px;
+		}
+		
+	@include tablet {
+
+		}
+		
+	@include laptop {
+
+		}
+		
+	@include desktop {
+
+		}
+		
+	@include fullscreen {
+
+		} 
+}
+
+.menu {
+	padding: 0;
+	font-size: 0.75em;
+	list-style-type: none;
+}
+
+
+.main-nav li{
+	padding: 1em 0.618em; 
+}
