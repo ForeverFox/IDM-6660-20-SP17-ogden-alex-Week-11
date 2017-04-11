@@ -10,20 +10,21 @@
 	
 	@include large-mobile {
 			width: 480px;
-			height: 600px;
 		}
 	
 	@include tablet {
 			width: 768px;
-			height: 100vh;
+			height: 512px;
 		}
 		
 	@include laptop {
 			width: 1024px;
+			height: 600px;
 		}
 	
 	@include desktop {
 			width: 1366px;
+			height: 768px;
 		}
 		
 	@include fullscreen {
