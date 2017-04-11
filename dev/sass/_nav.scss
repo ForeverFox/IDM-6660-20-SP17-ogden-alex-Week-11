@@ -1,5 +1,6 @@
 /* NAVIGATION MENU */
 
+<<<<<<< HEAD
 .main-nav {
 	position: absolute;
 	top: 0;
@@ -41,3 +42,34 @@
 .main-nav li{
 	padding: 1em 0.618em; 
 }
+=======
+.main-nav, .main-nav-home {
+	width: 100%;
+	text-align: center;
+}
+
+.main-nav {
+	background-color: $red;
+}
+
+.main-nav-home {
+	background-color: #000;
+	
+	li {
+		background-color: $red;
+	}
+}
+
+.menu {
+	@inlcude film-noir;
+	font-size: 1.25em;
+	list-style-type: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+.main-nav li, .main-nav-home li {
+	padding: 1em 0.618em; 
+}
+>>>>>>> refs/remotes/origin/development

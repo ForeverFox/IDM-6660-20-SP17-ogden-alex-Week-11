@@ -10,20 +10,35 @@
 	
 	@include large-mobile {
 			width: 480px;
+<<<<<<< HEAD
 			height: 600px;
+=======
+>>>>>>> refs/remotes/origin/development
 		}
 	
 	@include tablet {
 			width: 768px;
+<<<<<<< HEAD
 			height: 100vh;
+=======
+			height: 512px;
+>>>>>>> refs/remotes/origin/development
 		}
 		
 	@include laptop {
 			width: 1024px;
+<<<<<<< HEAD
+=======
+			height: 600px;
+>>>>>>> refs/remotes/origin/development
 		}
 	
 	@include desktop {
 			width: 1366px;
+<<<<<<< HEAD
+=======
+			height: 768px;
+>>>>>>> refs/remotes/origin/development
 		}
 		
 	@include fullscreen {
