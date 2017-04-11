@@ -30,7 +30,6 @@ a:link, a:visited {
 
 .skills {
 	font-size: 1em;
-	list-style-type: none;
 	font-style: italic;
 }
 
@@ -52,12 +51,13 @@ a:link, a:visited {
 	}
 	
 	@include desktop {
-		width: 768px;
+		width: 620px;
 		padding-top: 4em;
 	}
 	
 	@include fullscreen {
 		width: 800px;
+		padding-top: 1em;
 		padding-left: 2em;
 	}
 	
@@ -71,7 +71,7 @@ a:link, a:visited {
 	}
 	
 	@include desktop {
-		width: 640px;
+		width: 620px;
 	}
 	
 	@include fullscreen {
@@ -86,12 +86,17 @@ a:link, a:visited {
 
 .page-id {
 	position: absolute;
-	top: 1em;
-	left: 1em;
+	top: 0.5em;
+	left: 0.5em;
 	font-size: 1em;
 	text-transform: uppercase;
+	color: $red;
 	
 	@include film-noir;	
+	@include tablet {
+		top: 1em;
+		left: 1em;
+	}
 }
 
 .small-logo {
@@ -102,7 +107,7 @@ a:link, a:visited {
 	
 	@include large-mobile {
 		top: 2.618em;
-		left: 0.33em;
+		left: 1em;
 	}
 	
 	@include tablet {

@@ -35,7 +35,6 @@ a:link, a:visited {
 
 .skills {
   font-size: 1em;
-  list-style-type: none;
   font-style: italic; }
 
 .container, .content {
@@ -53,11 +52,12 @@ a:link, a:visited {
       padding-top: 3em; } }
   @media screen and (min-width: 1366px) {
     .container, .content {
-      width: 768px;
+      width: 620px;
       padding-top: 4em; } }
   @media screen and (min-width: 1680px) {
     .container, .content {
       width: 800px;
+      padding-top: 1em;
       padding-left: 2em; } }
 
 @media screen and (min-width: 1024px) {
@@ -66,7 +66,7 @@ a:link, a:visited {
     width: 500px; } }
 @media screen and (min-width: 1366px) {
   .content {
-    width: 640px; } }
+    width: 620px; } }
 @media screen and (min-width: 1680px) {
   .content {
     padding-left: 2em;
@@ -77,14 +77,19 @@ a:link, a:visited {
 
 .page-id {
   position: absolute;
-  top: 1em;
-  left: 1em;
+  top: 0.5em;
+  left: 0.5em;
   font-size: 1em;
   text-transform: uppercase;
+  color: #cd0929;
   font-family: "Josefin Sans", sans-serif;
   -ms-transform: rotate(-8deg);
   -webkit-transform: rotate(-8deg);
   transform: rotate(-8deg); }
+  @media screen and (min-width: 768px) {
+    .page-id {
+      top: 1em;
+      left: 1em; } }
 
 .small-logo {
   width: 100px;
@@ -94,7 +99,7 @@ a:link, a:visited {
   @media screen and (min-width: 410px) {
     .small-logo {
       top: 2.618em;
-      left: 0.33em; } }
+      left: 1em; } }
   @media screen and (min-width: 768px) {
     .small-logo {
       width: 150px;
@@ -130,41 +135,41 @@ a:link, a:visited {
   @media screen and (min-width: 410px) {
     .header {
       width: 480px;
-      height: 480px; } }
+      height: 600px; } }
   @media screen and (min-width: 768px) {
     .header {
       width: 768px;
-      height: 768px; } }
+      height: 100vh; } }
   @media screen and (min-width: 1024px) {
     .header {
-      width: 1024px;
-      height: 1024px; } }
+      width: 1024px; } }
   @media screen and (min-width: 1366px) {
     .header {
-      width: 1366px;
-      height: 1366px; } }
+      width: 1366px; } }
   @media screen and (min-width: 1680px) {
     .header {
-      width: 1680px;
-      height: 1680px; } }
+      width: 1680px; } }
 
 .header-2 {
-  color: #000;
+  background-color: #000;
   width: 100%;
-  height: 100px;
+  height: 150px;
   padding: 1em 1em 0 1em; }
+  @media screen and (min-width: 410px) {
+    .header-2 {
+      height: 180px; } }
   @media screen and (min-width: 768px) {
     .header-2 {
-      height: 200px; } }
+      height: 220px; } }
   @media screen and (min-width: 1024px) {
     .header-2 {
-      height: 260px; } }
+      height: 300px; } }
   @media screen and (min-width: 1366px) {
     .header-2 {
-      height: 300px; } }
+      height: 320px; } }
   @media screen and (min-width: 1680px) {
     .header-2 {
-      height: 400px; } }
+      height: 360px; } }
 
 .logo {
   margin: 0;
@@ -188,12 +193,12 @@ a:link, a:visited {
       left: 3%; } }
   @media screen and (min-width: 1366px) {
     .logo {
-      top: 20%; } }
+      top: 30%; } }
   @media screen and (min-width: 1680px) {
     .logo {
       width: 640px;
-      top: 9%;
-      left: 0; } }
+      top: 19%;
+      left: 2%; } }
 
 .logo img {
   max-width: 100%; }
@@ -235,7 +240,7 @@ body {
   -ms-transform: rotate(-8deg);
   -webkit-transform: rotate(-8deg);
   transform: rotate(-8deg);
-  color: #000; }
+  color: #fff; }
 
 .header h1 {
   font-size: 1.618em;
@@ -295,33 +300,38 @@ body {
 
 .h1-positioning {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 35%; }
   @media screen and (min-width: 410px) {
     .h1-positioning {
-      top: 30%;
       left: 30%; } }
   @media screen and (min-width: 768px) {
     .h1-positioning {
       top: 25%; } }
+  @media screen and (min-width: 1024px) {
+    .h1-positioning {
+      top: 15%; } }
   @media screen and (min-width: 1680px) {
     .h1-positioning {
-      top: 20%; } }
+      top: 10%; } }
 
 .h1-sub-positioning {
   position: absolute;
-  top: 75%;
+  top: 47%;
   left: 45%; }
   @media screen and (min-width: 410px) {
     .h1-sub-positioning {
-      top: 66%;
+      top: 45%;
       left: 40%; } }
   @media screen and (min-width: 768px) {
     .h1-sub-positioning {
       top: 50%; } }
   @media screen and (min-width: 1024px) {
     .h1-sub-positioning {
-      top: 55%; } }
+      top: 40%; } }
+  @media screen and (min-width: 1680px) {
+    .h1-sub-positioning {
+      top: 40%; } }
 
 .noir-heading-1 {
   position: absolute;
@@ -337,10 +347,14 @@ body {
   @media screen and (min-width: 1024px) {
     .noir-heading-1 {
       left: 20%; } }
+  @media screen and (min-width: 1366px) {
+    .noir-heading-1 {
+      top: 20%;
+      left: 35%; } }
   @media screen and (min-width: 1680px) {
     .noir-heading-1 {
-      top: 5%;
-      left: 37%; } }
+      top: 15%;
+      left: 42%; } }
 
 .noir-heading-2 {
   position: absolute;
@@ -360,12 +374,12 @@ body {
       left: 45%; } }
   @media screen and (min-width: 1366px) {
     .noir-heading-2 {
-      top: 10%;
-      left: 40%; } }
+      top: 30%;
+      left: 55%; } }
   @media screen and (min-width: 1680px) {
     .noir-heading-2 {
-      top: 15%;
-      left: 57%; } }
+      top: 33%;
+      left: 55%; } }
 
 .noir-heading-3 {
   position: absolute;
@@ -385,12 +399,12 @@ body {
       top: 37%; } }
   @media screen and (min-width: 1366px) {
     .noir-heading-3 {
-      right: 35%;
-      top: 33%; } }
+      right: 25%;
+      top: 60%; } }
   @media screen and (min-width: 1680px) {
     .noir-heading-3 {
       right: 20%;
-      top: 32%; } }
+      top: 55%; } }
 
 .noir-heading-4 {
   position: absolute;
@@ -410,12 +424,12 @@ body {
       top: 40%; } }
   @media screen and (min-width: 1366px) {
     .noir-heading-4 {
-      right: 22%;
-      top: 37%; } }
+      right: 10%;
+      top: 66%; } }
   @media screen and (min-width: 1680px) {
     .noir-heading-4 {
       right: 3%;
-      top: 35%; } }
+      top: 58%; } }
 
 .section h2 {
   font-family: "Cutive Mono", monospace;

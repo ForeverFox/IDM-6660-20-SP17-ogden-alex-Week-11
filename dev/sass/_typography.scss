@@ -44,7 +44,7 @@ body {
 
 .header-2 h1, .header-2 h2 {
 	@include film-noir;
-	color: #000;
+	color: #fff;
 }
 
 .header h1 {
@@ -118,11 +118,10 @@ body {
 
 .h1-positioning {
 	position: absolute;
-	top: 40%;
+	top: 20%;
 	left: 35%;
 	
 	@include large-mobile {
-		top: 30%;
 		left: 30%;
 	}
 	
@@ -130,19 +129,23 @@ body {
 		top: 25%;
 	}
 	
+	@include laptop {
+		top: 15%;
+	}
+	
 	@include fullscreen {
-		top: 20%;
+		top: 10%;
 	}
 	
 }
 
 .h1-sub-positioning {
 	position: absolute;
-	top: 75%;
+	top: 47%;
 	left: 45%;
 	
 	@include large-mobile {
-		top: 66%;
+		top: 45%;
 		left: 40%;
 	}
 	
@@ -151,7 +154,11 @@ body {
 	}
 	
 	@include laptop {
-		top: 55%;
+		top: 40%;
+	}
+	
+	@include fullscreen {
+		top: 40%;
 	}
 }
 
@@ -173,9 +180,14 @@ body {
 			left: 20%;
 		}
 		
+		@include desktop {
+			top: 20%;
+			left: 35%;
+		}
+		
 		@include fullscreen {
-			top: 5%;
-			left: 37%;
+			top: 15%;
+			left: 42%;
 		}
 }
 
@@ -200,13 +212,13 @@ body {
 		}
 	
 		@include desktop {
-			top: 10%;
-			left: 40%;
+			top: 30%;
+			left: 55%;
 		}
 	
 		@include fullscreen {
-			top: 15%;
-			left: 57%;
+			top: 33%;
+			left: 55%;
 		}
 }
 
@@ -231,13 +243,13 @@ body {
 		}
 	
 		@include desktop {
-			right: 35%;
-			top: 33%;
+			right: 25%;
+			top: 60%;
 		}
 	
 		@include fullscreen {
 			right: 20%;
-			top: 32%;
+			top: 55%;
 		}
 }
 
@@ -262,13 +274,13 @@ body {
 		}
 		
 		@include desktop {
-			right: 22%;
-			top: 37%;
+			right: 10%;
+			top: 66%;
 		}
 		
 		@include fullscreen {
 			right: 3%;
-			top: 35%;
+			top: 58%;
 		}
 }
 
